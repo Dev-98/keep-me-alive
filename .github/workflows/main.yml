@@ -38,7 +38,7 @@ jobs:
             git config --global user.email "devparker48@gmail.com"
             git add .
             git commit -m "Add file ${{ env.NOW }}.txt" || exit 0
-            git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/geekvikas/keep-me-alive.git main
+            git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/dev-98/keep-me-alive.git main
           else
             echo "Random number $RANDOM_NUM is not divisible by 2, skipping commit."
           fi
